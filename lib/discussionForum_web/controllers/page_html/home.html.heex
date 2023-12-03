@@ -1,4 +1,43 @@
 <.flash_group flash={@flash} />
-<div class ="text-red-700 text-xl" >
+<!-- Header -->
+  <div class="bg-blue-500 text-white py-4 flex items-center justify-between px-10">
+     <div class="flex justify-end w-full" >
+     <h1 class="text-2xl font-bold">Discussion Forum</h1>
+     </div>
+    
+    <div class="w-full flex justify-end">
+       <button class="bg-green-500 text-white px-4 py-2 rounded-md flex items-center font-bold">Log In</button>
+    </div>
+  </div>
 
-Hello from Arjesh </div>
+  <!-- Main Content -->
+  <div class="container mx-auto mt-8 p-8">
+
+    <!-- Form for Adding Topics -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Add a Topic</h2>
+      <hr class="py-2"/>
+      <form>
+        <div class="mb-4">
+          <label for="topic" class="block text-gray-700 text-sm font-bold mb-2">Topic:</label>
+          <input type="text" id="topic" name="topic" class="w-full px-3 py-2 border rounded-md">
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Add Topic</button>
+      </form>
+    </div>
+
+    <!-- List of Other Topics -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Other Topics</h2>
+      <ul class="space-y-2">
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <span class="text-lg font-semibold">Topic 1</span>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <span class="text-lg font-semibold">Topic 2</span>
+        </li>
+        <!-- Add more list items for other topics as needed -->
+      </ul>
+    </div>
+
+  </div>

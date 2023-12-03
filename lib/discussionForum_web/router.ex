@@ -18,6 +18,7 @@ defmodule DiscussionForumWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/hello", DiscussionForumController, :index
   end
 
   # Other scopes may use custom stacks.

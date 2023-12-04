@@ -18,7 +18,7 @@ defmodule DiscussionForumWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/topic", DiscussionForumController, :index
+    get "/login", DiscussionForumController, :index
     get "/topic/:topicId", DiscussionForumController, :show
   end
 
